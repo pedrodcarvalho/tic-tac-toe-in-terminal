@@ -28,14 +28,11 @@ while (control < 10) {
     let line = question("Wich line do you want: ");
     let column = question("Wich column do you want: ");
 
-    line -= 1;
-    column -= 1;
-
     if (control % 2 == 0) {
-        mat[line][column] = "O";
+        mat[line - 1][column - 1] = "O";
     }
     else
-        mat[line][column] = "X";
+        mat[line - 1][column - 1] = "X";
 
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
