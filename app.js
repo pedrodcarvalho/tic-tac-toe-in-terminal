@@ -1,6 +1,6 @@
 const { question } = require("readline-sync");
 
-let mat = Array(3).fill().map(() => Array(3).fill(0));
+let mat = Array(3).fill().map(() => Array(3).fill('■'));
 let control = 1;
 
 let lineOne = "";
