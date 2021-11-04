@@ -14,15 +14,15 @@ while (control < 10) {
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
             if (i == 0)
-                lineOne += mat[i][j];
+                lineOne += mat[i][j] + "|";
             else if (i == 1)
-                lineTwo += mat[i][j];
+                lineTwo += mat[i][j] + "|";
             else
-                lineThree += mat[i][j];
+                lineThree += mat[i][j] + "|";
         }
     }
 
-    console.log(`${lineOne}\n${lineTwo}\n${lineThree}`);
+    console.log(`———————\n|${lineOne}\n|—|—|—|\n|${lineTwo}\n|—|—|—|\n|${lineThree}\n———————`);
     console.log(`\n`);
 
     let line = question("Wich line do you want: ");
